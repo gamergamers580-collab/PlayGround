@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta
+      name="description"
+      content="Roba un Huevo — a compact stealth egg-heist game built with Three.js"
+    />
+    <title>Roba un Huevo</title>
+  </head>
+  <body>
+    <div id="app">
+      <div id="hud">
+        <div class="hud-panel">
+          <span class="label">Objective</span>
+          <strong id="objective">Steal the golden egg</strong>
+        </div>
+        <div class="hud-panel timer-panel">
+          <span class="label">Time</span>
+          <strong id="timer">00:00</strong>
+        </div>
+      </div>
+
+      <div id="message-panel" class="hidden"></div>
+
+      <div id="start-screen" class="screen visible">
+        <div class="card">
+          <p class="eyebrow">Museum Heist</p>
+          <h1>Roba un Huevo</h1>
+          <p>
+            Sneak into the vault, grab the glowing egg, and escape to the exit before the guards catch you.
+          </p>
+          <button id="start-button">Start heist</button>
+        </div>
+      </div>
+
+      <div id="end-screen" class="screen hidden">
+        <div class="card">
+          <p id="result-label" class="eyebrow">Heist failed</p>
+          <h2 id="result-title">Caught!</h2>
+          <p id="result-message">The guards saw you before you reached the exit.</p>
+          <button id="restart-button">Play again</button>
+        </div>
+      </div>
+
+      <div id="touch-controls" aria-label="Touch controls">
+        <div class="pad-row">
+          <button class="pad-button" data-move="up">▲</button>
+        </div>
+        <div class="pad-row center-row">
+          <button class="pad-button" data-move="left">◀</button>
+          <button class="pad-button" data-move="down">▼</button>
+          <button class="pad-button" data-move="right">▶</button>
+        </div>
+      </div>
+
+      <div id="game-root"></div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+{
+  "name": "roba-un-huevo",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Roba un Huevo — a tiny 3D stealth heist game",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0 --port 3000",
+    "build": "vite build --base ./",
+    "preview": "vite preview --host 0.0.0.0 --port 4173"
+  },
+  "dependencies": {
+    "three": "^0.170.0"
+  },
+  "devDependencies": {
+    "vite": "^5.4.11"
+  }
+}
