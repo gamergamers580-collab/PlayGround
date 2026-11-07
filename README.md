@@ -1,18 +1,17 @@
-# PlayGround
+# ¡Roba un huevo!
 
-<!-- omgithub:readme:start -->
-## 🚀 Build, play, and remix with OMGithub
+Una pequeña aventura 3D para navegador: roba huevos de los nidos, esquiva a las gallinas y vuelve a la cesta antes de que se acabe el tiempo.
 
-**Created using [android-create.lolgames.net](https://go.ondev.store/).**
+## Jugar
 
-[![OMGithub](https://img.shields.io/badge/OMGithub-Open%20project-orange?style=for-the-badge)](https://go.ondev.store/gamergamers580-collab/PlayGround)
-[![GitHub](https://img.shields.io/badge/GitHub-Source-181717?logo=github&style=for-the-badge)](https://github.com/gamergamers580-collab/PlayGround)
+```sh
+npm start
+```
 
-- 🎮 [Open the project](https://go.ondev.store/gamergamers580-collab/PlayGround).
-- ✨ [Remix this project](https://go.ondev.store/gamergamers580-collab/PlayGround?remix=1).
-- 💻 [Explore the source](https://github.com/gamergamers580-collab/PlayGround).
-- 🛠️ [Check build runs](https://github.com/gamergamers580-collab/PlayGround/actions).
-- 🐛 [Report an issue](https://github.com/gamergamers580-collab/PlayGround/issues).
-- 👤 [Explore the creator's projects](https://go.ondev.store/gamergamers580-collab).
-- 🌍 [Create with OMGithub](https://go.ondev.store/).
-<!-- omgithub:readme:end -->
+Abre [http://localhost:3002](http://localhost:3002). En móvil, usa el joystick de la izquierda y el botón de acción de la derecha. En ordenador, muévete con WASD o las flechas y pulsa E o espacio para interactuar.
+
+## Objetivo
+
+Entrega cinco huevos en la cesta en 75 segundos. Acércate a un nido y toca **ROBAR**; mientras llevas un huevo, vuelve a la cesta y toca **DEJAR**. Si una gallina te atrapa, sueltas el huevo y reapareces junto a la cesta.
+
+Three.js se sirve localmente desde `vendor/three.module.js`; la conexión a Google Fonts solo mejora la tipografía.

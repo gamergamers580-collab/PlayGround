@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+  <meta name="theme-color" content="#f6c971" />
+  <link rel="icon" href="data:," />
+  <title>Roba un huevo! — Aventura en el gallinero</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;600;700;800&family=Lilita+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="game-shell">
+    <canvas id="game" aria-label="Juego 3D del gallinero"></canvas>
+    <div class="vignette"></div>
+    <header class="topbar">
+      <div class="brand"><span class="brand-icon">🥚</span><div><strong>ROBA UN HUEVO!</strong><small>La gran fuga del gallinero</small></div></div>
+      <div class="hud">
+        <div class="hud-card egg-count"><span class="hud-emoji">🥚</span><span class="hud-label">HUEVOS</span><b id="score">0 <i>/ 5</i></b></div>
+        <div class="hud-card timer-card"><span class="hud-emoji">⏱️</span><span class="hud-label">TIEMPO</span><b id="timer">1:15</b></div>
+      </div>
+    </header>
+    <div class="mission-pill"><span class="pulse-dot"></span><span id="mission">¡Consigue 5 huevos y vuelve a la cesta!</span></div>
+    <div class="hint" id="hint"><span>👀</span> ¡Que no te vean!</div>
+    <div class="toast" id="toast" aria-live="polite"></div>
+
+    <section class="start-screen" id="startScreen">
+      <div class="start-card">
+        <div class="sun-stamp">☀️</div>
+        <div class="eyebrow">UNA MISIÓN DE ALTO RIESGO</div>
+        <h1>ROBA UN<br><em>HUEVO!</em></h1>
+        <p>Las gallinas vigilan. Tú solo quieres un desayuno tranquilo.</p>
+        <div class="howto"><div><span>🕹️</span><b>MUÉVETE</b><small>Joystick o WASD</small></div><div><span>✋</span><b>ROBA</b><small>Acércate y toca</small></div><div><span>🧺</span><b>ESCAPA</b><small>Vuelve a la cesta</small></div></div>
+        <button class="primary-button" id="startButton">¡A POR ELLOS! <span>→</span></button>
+        <div class="tiny-note">5 huevos · 75 segundos · ¡sin que te atrapen!</div>
+      </div>
+    </section>
+    <section class="end-screen hidden" id="endScreen">
+      <div class="start-card end-card"><div class="sun-stamp" id="endStamp">🏆</div><div class="eyebrow" id="endEyebrow">MISIÓN CUMPLIDA</div><h2 id="endTitle">¡QUÉ<br><em>CRACK!</em></h2><p id="endCopy">Desayuno asegurado.</p><div class="result-score"><span>HUEVOS EN LA CESTA</span><b id="finalScore">5</b></div><button class="primary-button" id="restartButton">OTRA PARTIDA <span>↻</span></button></div>
+    </section>
+
+    <div class="controls" id="controls">
+      <div class="joystick" id="joystick" aria-label="Joystick de movimiento"><div class="joy-ring"><div class="joy-knob" id="joyKnob"></div></div><span class="joy-caption">MOVER</span></div>
+      <button class="action-button" id="actionButton" aria-label="Robar o dejar huevo"><span id="actionIcon">✋</span><b id="actionLabel">ROBAR</b></button>
+    </div>
+    <div class="desktop-help">WASD / flechas <span>·</span> E / espacio para interactuar</div>
+    <div class="sound-badge">🐔 <span>GRANJA FELIZ</span></div>
+  </main>
+  <script type="module" src="game.js"></script>
+</body>
+</html>

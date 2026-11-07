@@ -1,0 +1,24 @@
+{
+  "name": "playground",
+  "version": "1.0.0",
+  "description": "<!-- omgithub:readme:start --> ## 🚀 Build, play, and remix with OMGithub",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node --check game.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gamergamers580-collab/PlayGround.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gamergamers580-collab/PlayGround/issues"
+  },
+  "homepage": "https://github.com/gamergamers580-collab/PlayGround#readme",
+  "dependencies": {
+    "three": "^0.180.0"
+  }
+}
